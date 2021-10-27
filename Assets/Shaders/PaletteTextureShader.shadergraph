@@ -1738,8 +1738,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2971.0,
-            "y": 265.0,
+            "x": -2983.0,
+            "y": 285.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -2516,8 +2516,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3211.0,
-            "y": 265.0,
+            "x": -3222.999755859375,
+            "y": 285.0,
             "width": 145.0,
             "height": 130.0
         }
@@ -4042,8 +4042,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2669.0,
-            "y": 265.0,
+            "x": -2680.999755859375,
+            "y": 285.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -5166,8 +5166,8 @@
     "m_ObjectId": "c6d75901ec6c48d285a064216c85aaa6",
     "m_Title": "Randomness",
     "m_Position": {
-        "x": -3236.0,
-        "y": 205.9998779296875
+        "x": -3247.999755859375,
+        "y": 225.99998474121095
     }
 }
 
@@ -6598,7 +6598,7 @@
     "m_OverrideReferenceName": "_MAIN_LIGHT_SHADOWS_CASCADE",
     "m_GeneratePropertyBlock": true,
     "m_KeywordType": 0,
-    "m_KeywordDefinition": 0,
+    "m_KeywordDefinition": 1,
     "m_KeywordScope": 1,
     "m_Entries": [],
     "m_Value": 1,
