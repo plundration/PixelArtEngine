@@ -37,8 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/DayNightController.cs" />
-     <Compile Include="Assets/Scripts/GrassParticleSprites.cs" />
      <Compile Include="Assets/Scripts/SobelOutline.cs" />
+     <Compile Include="Assets/Scripts/GrassParticleSprites.cs" />
+     <Compile Include="Assets/Scripts/cameracontroller.cs" />
      <None Include="Assets/Shaders/lighting.hlsl" />
      <None Include="Assets/Shaders/billboard.shader" />
      <None Include="Assets/Shaders/SobelOutline.shader" />
