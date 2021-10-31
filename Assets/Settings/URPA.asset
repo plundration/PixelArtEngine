@@ -22,24 +22,24 @@ MonoBehaviour:
   m_RequireDepthTexture: 1
   m_RequireOpaqueTexture: 0
   m_OpaqueDownsampling: 1
-  m_SupportsTerrainHoles: 1
+  m_SupportsTerrainHoles: 0
   m_SupportsHDR: 0
   m_MSAA: 1
   m_RenderScale: 1
   m_MainLightRenderingMode: 1
   m_MainLightShadowsSupported: 1
-  m_MainLightShadowmapResolution: 2048
+  m_MainLightShadowmapResolution: 4096
   m_AdditionalLightsRenderingMode: 1
-  m_AdditionalLightsPerObjectLimit: 4
+  m_AdditionalLightsPerObjectLimit: 3
   m_AdditionalLightShadowsSupported: 1
   m_AdditionalLightsShadowmapResolution: 1024
   m_ShadowDistance: 100
-  m_ShadowCascadeCount: 2
-  m_Cascade2Split: 0.38099998
-  m_Cascade3Split: {x: 0.626, y: 0.97400004}
+  m_ShadowCascadeCount: 3
+  m_Cascade2Split: 0.24000001
+  m_Cascade3Split: {x: 0.12, y: 0.488}
   m_Cascade4Split: {x: 0.0001, y: 0.2002002, z: 0.5405405}
-  m_ShadowDepthBias: 0.43
-  m_ShadowNormalBias: 2.47
+  m_ShadowDepthBias: 2
+  m_ShadowNormalBias: 0.78
   m_SoftShadowsSupported: 1
   m_UseSRPBatcher: 1
   m_SupportsDynamicBatching: 0
