@@ -21,7 +21,7 @@ MonoBehaviour:
   m_DefaultRendererIndex: 0
   m_RequireDepthTexture: 1
   m_RequireOpaqueTexture: 0
-  m_OpaqueDownsampling: 1
+  m_OpaqueDownsampling: 0
   m_SupportsTerrainHoles: 0
   m_SupportsHDR: 0
   m_MSAA: 1
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_ShadowDistance: 100
   m_ShadowCascadeCount: 3
   m_Cascade2Split: 0.24000001
-  m_Cascade3Split: {x: 0.22700001, y: 0.488}
+  m_Cascade3Split: {x: 0.21700001, y: 0.488}
   m_Cascade4Split: {x: 0.0001, y: 0.2002002, z: 0.5405405}
   m_ShadowDepthBias: 1.8
   m_ShadowNormalBias: 0.97

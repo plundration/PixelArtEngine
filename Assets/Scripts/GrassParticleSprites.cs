@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ParticleSystemModule;
 
 public class GrassParticleSprites : MonoBehaviour
 {
-    public GameObject grass;
+    public List<Mesh> meshes;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,10 @@ public class GrassParticleSprites : MonoBehaviour
         var terraindata = terrain.terrainData as TerrainData;
         int resolution = terraindata.heightmapResolution;
         Vector3 scale = terraindata.heightmapScale;
+
+        ParticleSystem ps = GetComponent<ParticleSystem>();
+        EmitParams grassParams = new EmitParams();
+        EmitParams flowerParams = new EmitParams();        
 
         for (int x = 0; x < resolution; x++) {
             for (int z = 0; z < resolution; z++) {
