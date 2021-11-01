@@ -1,7 +1,7 @@
 Shader "Custom/Sprite_Billboard" {
      Properties
      {
-         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+         _SpriteTex ("Sprite Texture", 2D) = "white" {}
          _Color ("Tint", Color) = (1,1,1,1)
          [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
          Scale ("Scale", Float) = 1
@@ -67,18 +67,12 @@ Shader "Custom/Sprite_Billboard" {
                  return OUT;
              }
  
-             sampler2D _MainTex;
+             sampler2D _SpriteTex;
              sampler2D _AlphaTex;
- 
-             fixed4 SampleSpriteTexture (float2 uv)
-             {
-                 fixed4 color = tex2D (_MainTex, uv);
-                 return color;
-             }
  
              fixed4 frag(v2f IN) : SV_Target
              {
-                 fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
+                 fixed4 c = tex2D (_SpriteTex, IN.texcoord) * IN.color;
                  c.rgb *= c.a;
                  return c;
              }

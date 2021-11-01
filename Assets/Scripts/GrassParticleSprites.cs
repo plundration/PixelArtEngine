@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.ParticleSystemModule;
+using static UnityEngine.ParticleSystem;
 
 public class GrassParticleSprites : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class GrassParticleSprites : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var terrain = GetComponent<Terrain>() as Terrain;
+        Terrain terrain = GetComponent<Terrain>();
 
         Vector3 tpos = terrain.transform.position;
         var terraindata = terrain.terrainData as TerrainData;
@@ -19,13 +19,16 @@ public class GrassParticleSprites : MonoBehaviour
 
         ParticleSystem ps = GetComponent<ParticleSystem>();
         EmitParams grassParams = new EmitParams();
-        EmitParams flowerParams = new EmitParams();        
+
 
         for (int x = 0; x < resolution; x++) {
             for (int z = 0; z < resolution; z++) {
-                if (Random.value > 0.995) {
+                if (Random.value > 0.95) {
                     var position = new Vector3(scale.x * x + tpos.x, terraindata.GetHeight(x, z) + tpos.y + 0.05f, scale.z * z + tpos.z);
-                    Instantiate(grass, position, Quaternion.identity);
+                    
+                    grassParams.position = position;
+                    ps.Emit(grassParams,1);
+                    Debug.Log("Emit");
                 }
             }
         }
